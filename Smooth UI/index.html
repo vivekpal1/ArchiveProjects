@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Smooth Scroll UI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:200,400" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="app">
+  <header class="header">
+    <div class="header__left">
+      <span>Smooth Scroll</span>
+    </div>
+    <div class="header__right">
+      <p>Thu, 5 Aug | 14:20</p>
+    </div>
+  </header>
+  
+  <nav class="nav">
+    <ul class="nav__menu">
+      <li class="nav__item">
+        <a href="#Banaglore" class="nav__link" data-scroll-to>
+          <div class="media">
+            <img src="https://c1.wallpaperflare.com/preview/572/790/545/architecture-travel-outdoors-sky.jpg" alt="" class="media__img">
+            <p class="media__content">
+              <strong>Bangalore</strong><br />
+              India
+            </p>
+          </div>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#Kashmir" class="nav__link" data-scroll-to>
+          <div class="media">
+            <img src="https://images.unsplash.com/photo-1614056965546-42fbe24eb36c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1959&q=80" alt="" class="media__img">
+            <p class="media__content">
+              <strong>Kashmir</strong><br />
+              India
+            </p>
+          </div>
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#Goa" class="nav__link" data-scroll-to>
+          <div class="media">
+            <img src="https://images.unsplash.com/photo-1534178039062-3656b3088fe4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80" alt="" class="media__img">
+            <p class="media__content">
+              <strong>Goa</strong><br />
+              India
+            </p>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  
+  <main class="main">
+    <article class="section" id="Banaglore" data-section>
+      <header class="section__header" style="background-image: url('https://c1.wallpaperflare.com/preview/572/790/545/architecture-travel-outdoors-sky.jpg');">
+        <h1 class="section__title">Bangalore</h1>
+        <p class="section__subtitle">12.97° N, 77.59° E</p>
+        <div class="section__controls">
+          <button class="btn btn--prev" title="Previous">
+            <span class="arrow arrow--left"></span>
+          </button>
+          <button class="btn btn--next" title="Next">
+            <span class="arrow arrow--right"></span>
+          </button>
+          <div class="user">
+            <img src="https://source.unsplash.com/200x200/?indian" class="user__img" alt="" />
+            <span class="user__name">User Name</span>
+          </div>
+        </div>
+      </header>
+      <div class="section__content">
+        <ul class="boxgrid">
+          <li class="boxgrid__item">
+            <a href="#" class="box box--weather">
+              <p><span class="text--large">28°C</span><br />Cloudy</p>
+            </a>
+          </li>
+          <li class="boxgrid__item boxgrid__item--wide">
+            <a href="#" class="box box--image">
+              <img src="https://source.unsplash.com/600x400/?nature" class="box__img" alt="" />
+            </a>
+          </li>
+          <li class="boxgrid__item boxgrid__item--push">
+            <a href="#" class="box box--image">
+              <img src="https://source.unsplash.com/300x300/?tamil" class="box__img" alt="" />
+            </a>
+          </li>
+          <li class="boxgrid__item">
+            <a href="#" class="box box--cost">
+              <p><span class="text--large">$1150  </span><br />Daily cost</p>
+            </a>
+          </li>
+          <li class="boxgrid__item boxgrid__item--push">
+            <a href="#" class="box box--video">
+              <img src="https://images.unsplash.com/photo-1600761649979-bd6967781045?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1900&q=80" class="box__img" alt="" />
+            </a>
+          </li>
+          <li class="boxgrid__item">
+            <a href="#" class="box box--locations">
+              <p><span class="text--large">189</span><br />Locations</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </article>
+    <canvas>
+      <a href="#abc">
+        <p></p>
+      </a>
+    </canvas>
+    <article class="section" id="Kashmir" data-section>
+      <header class="section__header" style="background-image: url('https://images.unsplash.com/photo-1614056965546-42fbe24eb36c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1959&q=80');">
+        <h1 class="section__title">Kashmir</h1>
+        <p class="section__subtitle">34.08° N, 74.79° E</p>
+        <div class="section__controls">
+          <button class="btn btn--prev" title="Previous">
+            <span class="arrow arrow--left"></span>
+          </button>
+          <button class="btn btn--next" title="Next">
+            <span class="arrow arrow--right"></span>
+          </button>
+          <div class="user">
+            <img src="https://source.unsplash.com/200x200/?indianpeople" class="user__img" alt="" />
+            <span class="user__name">User</span>
+          </div>
+        </div>
+      </header>
+      <div class="section__content">
+        <ul class="boxgrid">
+          <li class="boxgrid__item">
+            <a href="#" class="box box--weather">
+              <p><span class="text--large">19°C</span><br />Clouds</p>
+            </a>
+          </li>
+          <li class="boxgrid__item">
+            <a href="#" class="box box--image">
+              <img src="https://source.unsplash.com/300x300/?nature" class="box__img" alt="" />
+            </a>
+          </li>
+          <li class="boxgrid__item boxgrid__item--push">
+            <a href="#" class="box box--video">
+              <img src="https://source.unsplash.com/300x300/?kashmir" class="box__img" alt="" />
+            </a>
+          </li>
+          <li class="boxgrid__item boxgrid__item--wide">
+            <a href="#" class="box box--image">
+              <img src="https://source.unsplash.com/600x400/?indian" class="box__img" alt="" />
+            </a>
+          </li>
+          <li class="boxgrid__item boxgrid__item--push">
+            <a href="#" class="box box--locations">
+              <p><span class="text--large">48</span><br />Locations</p>
+            </a>
+          </li>
+          <li class="boxgrid__item">
+            <a href="#" class="box box--cost">
+              <p><span class="text--large">$650</span><br />Daily cost</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </article>
+    <article class="section" id="Goa" data-section>
+      <header class="section__header" style="background-image: url('https://images.unsplash.com/photo-1534178039062-3656b3088fe4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80');">
+        <h1 class="section__title">Goa</h1>
+        <p class="section__subtitle">15.29° N, 74.12° E</p>
+        <div class="section__controls">
+          <button class="btn btn--prev" title="Previous">
+            <span class="arrow arrow--left"></span>
+          </button>
+          <button class="btn btn--next" title="Next">
+            <span class="arrow arrow--right"></span>
+          </button>
+          <div class="user">
+            <img src="https://source.unsplash.com/200x200/?indianpeople" class="user__img" alt="" />
+            <span class="user__name">User</span>
+          </div>
+        </div>
+      </header>
+      <div class="section__content">
+        <ul class="boxgrid">
+          <li class="boxgrid__item boxgrid__item--wide">
+            <a href="#" class="box box--image">
+              <img src="https://source.unsplash.com/600x400/?goa" class="box__img" alt="" />
+            </a>
+          </li>
+          <li class="boxgrid__item">
+            <a href="#" class="box box--weather">
+              <p><span class="text--large">30°C</span><br />Sunny</p>
+            </a>
+          </li>
+          <li class="boxgrid__item boxgrid__item--push">
+            <a href="#" class="box box--video">
+              <img src="https://source.unsplash.com/300x300/?southindia" class="box__img" alt="" />
+            </a>
+          </li>
+          <li class="boxgrid__item boxgrid__item--push">
+            <a href="#" class="box box--image">
+              <img src="https://source.unsplash.com/300x300/?indian" class="box__img" alt="" />
+            </a>
+          </li>
+          <li class="boxgrid__item boxgrid__item--push">
+            <a href="#" class="box box--locations">
+              <p><span class="text--large">1.366</span><br />Locations</p>
+            </a>
+          </li>
+          <li class="boxgrid__item">
+            <a href="#" class="box box--cost">
+              <p><span class="text--large">150$</span><br />Daily cost</p>
+            </a>
+          </li>
+          <li class="boxgrid__item">
+            <a href="#" class="box box--image">
+              <img src="https://source.unsplash.com/300x300/?maharashtra" class="box__img" alt="" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </article>
+  </main>
+  
+  <button class="scrollctrl scrollctrl--prev" data-scroll-dir="prev">
+    <span class="arrow arrow--large arrow--up"></span>
+  </button>
+  <button class="scrollctrl scrollctrl--next" data-scroll-dir="next">
+    <span class="arrow arrow--large arrow--down"></span>
+  </button>
+  
+</div>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
